@@ -1,5 +1,5 @@
 import './index.css';
-import profileImg from '../../../public/carolina.png';
+import profileImg from '../../../public/Carolina.png';
 
 export default function HeroProfesional() {
   return (
