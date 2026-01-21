@@ -1,0 +1,77 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Backgrounds */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  animation: fade 10s infinite;
+}
+
+/* Imágenes */
+.bg-1 {
+  background-image: url('https://escobaryduque.com/wp-content/uploads/2024/01/familia-joven-su-pequena-hija-parque-otono-scaled.jpg');
+}
+
+.bg-2 {
+  background-image: url('https://escobaryduque.com/wp-content/uploads/2024/01/empresarios-pie-fuera-edificio-oficinas-scaled.jpg');
+  animation-delay: 5s;
+}
+
+/* Fade animation */
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  max-width: 720px;
+  font-size: 1.1rem;
+}
+@media (max-width: 768px) {
+  .contacto {
+    border-left: 0px !important;
+  }
+}

@@ -1,0 +1,91 @@
+.asistencias-section {
+  padding: 90px 0;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 5;
+}
+
+/* HEADER */
+.asistencias-tag {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #153f51;
+}
+
+.asistencias-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #153f51;
+  margin: 10px 0 16px;
+}
+
+.asistencias-text {
+  max-width: 720px;
+  font-size: 1rem;
+  color: #6b6b6b;
+  line-height: 1.7;
+}
+
+/* CARD */
+.asistencia-card {
+  position: relative;
+  height: 300px;
+  border-radius: 6px;
+  overflow: hidden;
+  opacity: 8;
+}
+.asistencia-card:hover {
+  position: relative;
+  height: 300px;
+  border-radius: 6px;
+  overflow: hidden;
+  opacity: 0.7;
+}
+.asistencia-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.asistencia-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.15));
+}
+
+.asistencia-overlay h5 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.asistencia-overlay p {
+  color: #eaeaea;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* BOTÓN */
+.btn-terminos {
+  background-color: #153f51;
+  color: white;
+  padding: 12px 26px;
+  border: none;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .asistencias-section {
+    padding: 60px 0;
+  }
+
+  .asistencia-card {
+    height: 300px;
+  }
+}

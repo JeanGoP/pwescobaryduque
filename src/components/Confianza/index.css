@@ -1,0 +1,154 @@
+.eydc-wrapper {
+  background: #040f14;
+  display: flex;
+  align-items: center;
+  padding: 50px 6%;
+  color: white;
+  position: relative;
+  z-index: 6;
+  justify-content: flex-end;
+}
+
+/* Texto */
+.eydc-content {
+  flex: 1;
+}
+
+.eydc-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.eydc-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Acciones */
+.eydc-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.eydc-btn-primary {
+  background: #0b3a4a;
+  border: none;
+  padding: 14px 26px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.eydc-btn-primary:hover {
+  background: #0f4f65;
+}
+
+.eydc-btn-outline {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid white;
+  padding: 14px 22px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+
+.eydc-btn-outline:hover {
+  background: white;
+  color: #061820;
+}
+
+/* Visual */
+.eydc-visual {
+  position: absolute;
+}
+
+.eydc-house {
+  z-index: 1;
+}
+
+.eydc-car {
+  width: 280px;
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  z-index: 2;
+}
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+/* Tablets y abajo */
+@media (max-width: 992px) {
+  .eydc-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 8%;
+  }
+
+  .eydc-content {
+    z-index: 2;
+  }
+
+  .eydc-title {
+    font-size: 2.6rem;
+  }
+
+  .eydc-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .eydc-visual {
+    position: relative;
+    margin-top: 40px;
+  }
+
+  .eydc-house {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+  .eydc-wrapper {
+    padding: 50px 6%;
+  }
+
+  .eydc-title {
+    font-size: 2.1rem;
+    line-height: 1.15;
+  }
+
+  .eydc-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .eydc-actions {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .eydc-btn-primary,
+  .eydc-btn-outline {
+    width: 100%;
+    justify-content: center;
+    padding: 14px;
+  }
+
+  .eydc-house {
+    max-width: 100%;
+  }
+}

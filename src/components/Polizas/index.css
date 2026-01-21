@@ -1,0 +1,91 @@
+.polizas-intro {
+  padding: 80px 0;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 5;
+}
+
+.polizas-tag {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #153f51;
+  margin-bottom: 12px;
+}
+
+.polizas-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #153f51;
+  margin-bottom: 20px;
+}
+
+.polizas-text {
+  max-width: 720px;
+  font-size: 1rem;
+  color: #6b6b6b;
+  line-height: 1.7;
+}
+
+.btn-asesoria {
+  background-color: #153f51;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  font-weight: 600;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .polizas-intro {
+    padding: 50px 0;
+  }
+
+  .polizas-text {
+    max-width: 100%;
+  }
+}
+/* GRID PÓLIZAS */
+.poliza-card {
+  position: relative;
+  height: 340px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.poliza-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.poliza-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+}
+
+.poliza-overlay h5 {
+  color: white;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* HOVER */
+.poliza-card:hover img {
+  transform: scale(1.08);
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .poliza-card {
+    height: 280px;
+  }
+}

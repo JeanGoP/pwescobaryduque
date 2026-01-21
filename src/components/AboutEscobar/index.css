@@ -1,0 +1,187 @@
+.eyd-about-wrapper {
+  padding: 6rem 6%;
+  background: #ffffff;
+}
+
+.eyd-about-container {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+/* TEXTO */
+.eyd-about-text {
+  flex: 1.1;
+}
+
+.eyd-about-label {
+  color: #0b4c66;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.eyd-about-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 0.5rem 0 1.5rem;
+  color: #0a2e3b;
+}
+
+.eyd-about-text p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.eyd-about-features {
+  margin-top: 2.5rem;
+}
+
+.eyd-feature {
+  margin-bottom: 1.8rem;
+}
+
+.eyd-feature h4 {
+  color: #0b4c66;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+/* VISUAL */
+.eyd-about-visual {
+  flex: 1;
+  position: relative;
+}
+
+.eyd-img-small {
+  width: 240px;
+  border-radius: 8px;
+  border: 15px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.eyd-img-large {
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-left: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.eyd-about-badge {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  background: #0a2e3b;
+  color: white;
+  padding: 18px 22px;
+  border-radius: 8px;
+  border: 15px solid white;
+  font-weight: 700;
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+}
+.eyd-about-badge h5 {
+  font-weight: 700 !important;
+}
+.eyd-about-badge span {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+/* ========================= */
+/* RESPONSIVE ABOUT */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .eyd-about-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .eyd-about-title {
+    font-size: 2.4rem;
+  }
+
+  .eyd-about-visual {
+    width: 100%;
+    min-height: 420px;
+  }
+
+  .eyd-img-small {
+    width: 200px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .eyd-img-large {
+    width: 90%;
+    margin: 140px auto 0;
+    display: block;
+  }
+
+  .eyd-about-badge {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -40px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+  .eyd-about-wrapper {
+    padding: 4rem 6%;
+  }
+
+  .eyd-about-title {
+    font-size: 2rem;
+  }
+
+  .eyd-about-text {
+    text-align: center;
+  }
+
+  .eyd-about-features {
+    margin-top: 2rem;
+  }
+
+  .eyd-feature {
+    text-align: left;
+  }
+
+  .eyd-about-visual {
+    min-height: 380px;
+  }
+
+  .eyd-img-small {
+    width: 180px;
+    border-width: 10px;
+  }
+
+  .eyd-img-large {
+    width: 100%;
+    margin: 120px auto 0;
+  }
+
+  .eyd-about-badge {
+    flex-direction: column;
+    gap: 4px;
+    padding: 14px 18px;
+    border-width: 10px;
+    bottom: -30px;
+  }
+
+  .eyd-about-badge h5 {
+    font-size: 1.2rem;
+  }
+
+  .eyd-about-badge span {
+    font-size: 0.85rem;
+  }
+}

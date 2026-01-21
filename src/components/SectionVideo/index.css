@@ -1,0 +1,22 @@
+.tmh-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #091b22;
+}
+
+/* Video */
+.tmh-video-wrapper {
+  width: 100%;
+  max-width: 1300px;
+}
+
+.tmh-video-wrapper video {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  position: relative;
+  z-index: 5;
+}
