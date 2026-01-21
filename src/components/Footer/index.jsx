@@ -72,7 +72,7 @@ export default function Footer() {
         <p>
           Development by{' '}
           <a href="http://agenciaidp.com" target="_blank" rel="noreferrer">
-            Agencia IDP
+            Sidecil SAS
           </a>
         </p>
 
