@@ -1,4 +1,4 @@
-import './index.css';
+import '../Cotizacion/cotizacion.css';
 
 export default function Cotizacion() {
   return (
